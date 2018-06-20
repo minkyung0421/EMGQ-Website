@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+    body,
+    h1 {
+        font-family: "Raleway", Arial, sans-serif
+    }
+
+    h1 {
+        letter-spacing: 6px
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+</style>
+
+<body>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-content" style="max-width:1500px">
+
+        <!-- Header -->
+        <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
+            <h1 class="w3-xlarge">EMGQ</h1>
+            <h1>Team Project</h1>
+
+            <div class="w3-padding-32">
+                <div class="w3-bar w3-border">
+                    <a href="index.html" class="w3-bar-item w3-button">BACK</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Photo Grid -->
+        <div class="w3-row-padding w3-grayscale" style="margin-bottom:128px">
+            <div class="w3-half">
+                <img src="image/1.jpg" style="width:100%" onclick="onClick(this)" alt="아주 예쁜 그림입니당">
+                <img src="image/2.jpg" style="width:100%" onclick="onClick(this)" alt="아주 예쁜 그림입니당">
+                <img src="image/3.jpg" style="width:100%" onclick="onClick(this)" alt="아주 예쁜 그림입니당">
+                <img src="image/4.jpg" style="width:100%" onclick="onClick(this)" alt="아주 예쁜 그림입니당">
+                <img src="image/5.jpeg" style="width:100%" onclick="onClick(this)" alt="아주 예쁜 그림입니당">
+                <img src="image/6.jpg" style="width:100%" onclick="onClick(this)" alt="아주 예쁜 그림입니당">
+                <img src="image/7.jpg" style="width:100%" onclick="onClick(this)" alt="아주 예쁜 그림입니당">
+                <img src="image/9.jpg" style="width:100%" onclick="onClick(this)" alt="아주 예쁜 그림입니당">
+
+            </div>
+
+            <div class="w3-half">
+                <img src="image/19.jpg" style="width:100%" onclick="onClick(this)" alt="아주 예쁜 그림입니당">
+                <img src="image/18.jpg" style="width:100%" onclick="onClick(this)" alt="아주 예쁜 그림입니당">
+                <img src="image/17.jpg" style="width:100%" onclick="onClick(this)" alt="아주 예쁜 그림입니당">
+                <img src="image/16.jpg" style="width:100%" onclick="onClick(this)" alt="아주 예쁜 그림입니당">
+                <img src="image/15.jpg" style="width:100%" onclick="onClick(this)" alt="아주 예쁜 그림입니당">
+                <img src="image/14.jpg" style="width:100%" onclick="onClick(this)" alt="아주 예쁜 그림입니당">
+                <img src="image/13.jpg" style="width:100%" onclick="onClick(this)" alt="아주 예쁜 그림입니당">
+                <img src="image/12.png" style="width:100%" onclick="onClick(this)" alt="아주 예쁜 그림입니당">
+                <img src="image/10.jpg" style="width:100%" onclick="onClick(this)" alt="아주 예쁜 그림입니당">
+                <img src="image/8.jpg" style="width:100%" onclick="onClick(this)" alt="아주 예쁜 그림입니당">
+            </div>
+        </div>
+
+        <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+        <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+          <img id="img01" class="w3-image">
+          <p id="caption"></p>
+        </div>
+      </div>
+        <!-- End Page Content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large">
+        <a href = "https://www.facebook.com/profile.php?id=100010732530485"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a href = "https://github.com/minkyung0421"><i class="fa fa-github w3-hover-opacity"></i></a>
+        <p>Powered by
+            <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a>
+        </p>
+        Copyright &copy; 2018. Choi MinKyung All rights reserved.
+    </footer>
+
+</body>
+
+<script>
+    // Script to open and close sidebar
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+    }
+
+</script>
+<script>
+    // Script to open and close sidebar
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+    }
+
+</script>
+
+</html>

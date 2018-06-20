@@ -1,0 +1,167 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Raleway", sans-serif
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button.btn-1::after {
+-webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+-o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+button.btn-1 {
+background: none;
+border: 3px solid black;
+border-radius: 5px;
+color: black;
+font-size: 13pt;
+font-weight: bold;
+position: relative;
+text-transform: uppercase;
+width: 8%;
+height: 6%;
+}
+
+button.btn-1::before,
+button.btn-1::after {
+background: black;
+content: '';
+position: absolute;
+z-index: -1;
+}
+
+button.btn-1:hover {
+color: white;
+}
+
+/* BUTTON 1 */
+.btn-1::after {
+height: 0;
+left: 0;
+top: 0;
+width: 100%;
+}
+
+
+.btn-1:hover:after {
+height: 100%;
+}
+
+label{
+margin-right: 7%
+}
+
+form {
+  /* Just to center the form on the page */
+  margin: 0 auto;
+  width: 50%;
+  max-height: 90%;
+  /* To see the outline of the form */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+
+label {
+  /* To make sure that all label have the same size and are properly align */
+  display: inline-block;
+  width: 14%;
+  text-align: right;
+}
+
+input, textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* To give the same size to all text field */
+  width: 40%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  /* To harmonize the look & feel of text field border */
+  border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+  /* To give a little highlight on active elements */
+  border-color: #000;
+}
+
+textarea {
+  /* To properly align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* To give enough room to type some text */
+  height: 5em;
+  max-height: 180px;
+  /* To allow users to resize any textarea vertically
+     It does not work on every browsers */
+  resize: vertical;
+}
+
+.join{
+    background: black;
+    color: white;
+    border: 0;
+    outline: 0;
+    padding:1%;
+    font-weight: 800;
+}
+
+.join:hover{
+    background: white;
+    color: black;
+    border: solid 1px black;
+}
+
