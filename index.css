@@ -1,3 +1,5 @@
+@font-face{font-family:NAMSANL; src:url(font/NAMSANL.TTF)}
+
 body,
 h1,
 h2,
@@ -29,7 +31,7 @@ h5 {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-  height: 80%;
+  height: 95%;
 }
 
 /* The Close Button */
@@ -99,7 +101,7 @@ margin-right: 7%
 form {
   /* Just to center the form on the page */
   margin: 0 auto;
-  width: 50%;
+  width: 55%;
   max-height: 90%;
   /* To see the outline of the form */
   padding: 1em;
@@ -123,7 +125,7 @@ input, textarea {
   /* To make sure that all text fields have the same font settings
      By default, textareas have a monospace font */
   font: 1em sans-serif;
-
+ font-family:NAMSANL;
   /* To give the same size to all text field */
   width: 40%;
   -moz-box-sizing: border-box;
